@@ -1,0 +1,59 @@
+<!-- Cart Page -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Cart of the cat store"/>
+        <title>Meowstore</title>
+        <link rel="stylesheet" href="C:\Users\eloi1\source\repos\Meowstore2\css\navigationStyle.css"/>
+        <link rel="stylesheet" href="C:\Users\eloi1\source\repos\Meowstore2\css\orderform.css"/>
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align: center;">Cart</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--List of Items in Cart-->
+
+            <!--Total Price-->
+            <p>Total Price:</p>
+
+
+
+            <form id="orderForm">                
+                <!--Name-->
+                <label for="name">Name: <input type="text" id="name" name="name" required placeholder="John Doe"></label>
+
+                <!--Email Address-->
+                <label for="email">Email: <input type="text" id="email" name="email" required placeholder="john.doe@example.com"></label>
+
+                <!--Address-->
+                <label for="address">Address: <input type="text" id="address" name="address" required placeholder="123 Main Street"></label>
+
+                <!--Terms and Conditions-->
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+
+                <!--Confirm Purchase Button-->
+                <button type="submit">Confirm Purchase</button>
+            </form>
+        </main>
+        <footer>
+            <p><a href="privacy.html">Privacy Policy</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+            <p>Copyright © 2024 Meowstore AB. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

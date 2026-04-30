@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Catalogue of the cat store"/>
+
+        <title>Meowstore</title>
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="C:\Users\eloi1\source\repos\Meowstore2\css\CatalogueStyle.css"/>
+        <link rel="stylesheet" href="C:\Users\eloi1\source\repos\Meowstore2\css\navigationStyle.css"/>
+
+        <!--Scripts-->
+        <script src="https://kit.fontawesome.com/a7a7df7c9f.js" crossorigin="anonymous"></script>
+        <script src="C:\Users\eloi1\source\repos\Meowstore2\script\api.js" defer></script>
+        <script src="C:\Users\eloi1\source\repos\Meowstore2\script\loadGallery.js" defer></script>
+        <!-- <script src="C:\Users\eloi1\source\repos\Meowstore2\script\filterGallery.js" defer></script> -->
+        <script src="C:\Users\eloi1\source\repos\Meowstore2\script\search.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align: center;">Meowstore</h1>
+            <nav>
+                <ul>
+                    <!-- Navigation links -->
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Show Filter Buttons
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">All</button>
+                <button class="btn" onclick="filterSelection('greece')">Greece</button>
+                <button class="btn" onclick="filterSelection('egypt')">Egypt</button>
+            </div> -->
+
+            <!-- Template for catalogue items -->
+            <template id="cardTemplate">
+                <div class="column placeholder">
+                    <div class="content">
+                        <img src="" alt="Image Reference" style="width:100%"/>
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+            </template>
+
+            <!-- Catalogue items should be dynamically inserted here -->
+            <div class="row">
+                <div id="container"></div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <!--Show Bottom Navigation-->
+                <p><a href="privacy.html">Privacy Policy</a></p>
+                <p><a href="contact.html">Contact Us</a></p>
+                <p>Copyright © 2024 Meowstore AB. All rights reserved.</p>
+            </nav>
+        </footer>
+    </body>
+</html>
