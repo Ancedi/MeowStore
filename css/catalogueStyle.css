@@ -3,8 +3,7 @@
 }
 
 body{
-    background-color:
-    radial-gradient(to bottom, #ffffff, #000000);
+    background: radial-gradient(to bottom, #ffffff, #000000);
     padding: 20px;
     font-family: Arial;
 }
@@ -20,32 +19,29 @@ h1{
 }
 
 .row{
-    margin: 8px -16px;
-}
-
-.row,
-.row > .column{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
     padding: 8px;
+    margin: 8px 0;
 }
 
 .column{
-    float: left;
-    width: 33.33%;
-    display: none;
-}
-
-.row:after{
-    content:"";
-    display: table;
-    clear: both;
+    display: block;
 }
 
 .content{
     background-color: white;
     padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.show{
+.content img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
     display: block;
 }
 
