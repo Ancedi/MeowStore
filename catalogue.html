@@ -27,21 +27,23 @@
         </header>
         <main>
             <!-- Template for catalogue items -->
-
+            <input type="text" id="searchInput" placeholder="Search cats..." />
             <!-- Catalogue items should be dynamically inserted here -->
-            <div id ="container" class="row">
-                <template id="cardTemplate">
-                    <div class="column placeholder">
-                        <div class="content">
-                            <img src="" alt="Image Reference" style="width:100%"/>
-                            <h3></h3>
-                            <small></small>
-                            <p></p>
-                            <button class="btn">Add to Cart</button>
-                        </div>
+            <template id="cardTemplate">
+                <div class="column placeholder">
+                    <div class="content">
+                        <img src="" alt="Image Reference" style="width:100%"/>
+                        <h3></h3>
+                        <strong data-price></strong>
+                        <small></small>
+                        <p></p>
+                        <button class="btn"></button>
                     </div>
+                </div>
             </template>
-            </div>
+
+            <div id="container" class="row"></div>
+            
             <div>
                 <ul class="pagination" id="pagination">
                     <li id="prevPage"><a href="#">Previous</a></li>
@@ -63,6 +65,6 @@
             <!--Scripts-->
             <script src="https://kit.fontawesome.com/a7a7df7c9f.js" crossorigin="anonymous"></script>
             <script src="script/api.js"></script>
-            <script src="script/loadGallery.js"></script>
+            <script type="module" src="script/catalogue.js"></script>
     </body>
 </html>

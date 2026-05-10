@@ -23,18 +23,22 @@
         </header>
         <main>
             <!--List of Items in Cart-->
+            <ul id="cartItems" style="text-align: center;">
+                <!--Cart items will be dynamically inserted here-->
+            </ul>
 
             <!--Total Price-->
+            <p style="text-align: center;"><span id="totalPrice">0.00</span></p>
 
             <form id="orderForm">                
                 <!--Name-->
-                <label for="name">Name: <input type="text" id="name" name="name" required placeholder="John Doe"></label>
+                <label id="nameInput"for="name"><input type="text" id="name" name="name" required placeholder="Name"></label>
 
                 <!--Email Address-->
-                <label for="email">Email: <input type="text" id="email" name="email" required placeholder="john.doe@example.com"></label>
+                <label id="emailInput" for="email"><input type="text" id="email" name="email" required placeholder="Email"></label>
 
                 <!--Address-->
-                <label for="address">Address: <input type="text" id="address" name="address" required placeholder="123 Main Street"></label>
+                <label id="addressInput" for="address"><input type="text" id="address" name="address" required placeholder="Address"></label>
 
                 <!--Terms and Conditions-->
                 <label for="terms">
@@ -51,5 +55,6 @@
             <p><a href="contact.html">Contact Us</a></p>
             <p>Copyright © 2024 Meowstore AB. All rights reserved.</p>
         </footer>
+        <script type="module" src="script/cart.js"></script>
     </body>
 </html>
